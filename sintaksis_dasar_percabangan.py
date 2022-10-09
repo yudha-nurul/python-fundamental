@@ -24,5 +24,21 @@ print('=' * 50)
 -karena ditoko ada telur. :-)
 tugas: dari dialog diatas, buat flowchart yg benar dan tulis programnya 
 """
-print("ibu berkata: tolong pergi ketoko dan beli satu botol susu")
-print("jika disana ")
+
+print("ibu berkata: tolong pergi ketoko dan beli 1 botol susu")
+print("jika disana ada telur, bawa 6")
+print('baik bu, lalu saya pun pergi ketoko')
+jumlah_botol_susu = 0
+jumlah_telur = 1
+print(f'ketika sampai ditoko, saya melihat ada {jumlah_botol_susu} dan {jumlah_botol_susu_ditoko}')
+if jumlah_botol_susu > 0:
+    if jumlah_telur > 0:
+        print('>>>lalu saya pulang dengan membawa 6 botol susu')
+    else:
+        print('>>>lalu saya pulang dengan membawa 1 botol susu')
+else:
+    print(">>>lalu saya pulang tidak membawa apa-apa")
+print('selesai')
+
+
+
