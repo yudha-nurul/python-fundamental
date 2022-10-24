@@ -11,7 +11,7 @@ print('ibu berkata "budi,, ayo baca buku dan pahami"')
 
 while jumlah_dibaca < jumlah_buku + 3:
     jumlah_dibaca = jumlah_dibaca + 1
-    if jumlah_paham == 9:
+    if jumlah_paham == 10:
         print(f'buku ke {jumlah_paham} belum dipahami')
     else:
         print(f'buku ke {jumlah_paham} sudah dibaca dan dipahami')
