@@ -1,0 +1,305 @@
+Real Python: Python 3 Cheat Sheet
+Contents
+1 Introduction 2
+2 Primitives 3
+Numbers . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+Strings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Booleans . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+3 Collections 9
+Lists . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Dictionaries . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+4 Control Statements 12
+IF Statements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Loops . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+5 Functions 15
+1
+Chapter 1
+Introduction
+Python is a beautiful language. It’s easy to learn and fun, and its syntax is simple yet elegant. Python is a popular choice for beginners, yet still powerful enough to back some of the
+world’s most popular products and applications from companies like NASA, Google, Mozilla,
+Cisco, Microsoft, and Instagram, among others. Whatever the goal, Python’s design makes
+the programming experience feel almost as natural as writing in English.
+Check out Real Python to learn more about Python and web development. Email your questions or feedback to info@realpython.com.
+2
+Chapter 2
+Primitives
+Numbers
+Python has integers and floats. Integers are simply whole numbers, like 314, 500, and 716.
+Floats, meanwhile, are fractional numbers like 3.14, 2.867, 76.88887. You can use the type
+method to check the value of an object.
+1 >>> type(3)
+2 <class 'int'>
+3 >>> type(3.14)
+4 <class 'float'>
+5 >>> pi = 3.14
+6 >>> type(pi)
+7 <class 'float'>
+In the last example, pi is the variable name, while 3.14 is the value.
+You can use the basic mathematical operators:
+1 >>> 3 + 3
+2 6
+3 >>> 3 - 3
+4 0
+5 >>> 3 / 3
+6 1.0
+7 >>> 3 / 2
+3
+8 1.5
+9 >>> 3 * 3
+10 9
+11 >>> 3 ** 3
+12 27
+13 >>> num = 3
+14 >>> num = num - 1
+15 >>> print(num)
+16 2
+17 >>> num = num + 10
+18 >>> print(num)
+19 12
+20 >>> num += 10
+21 >>> print(num)
+22 22
+23 >>> num -= 12
+24 >>> print(num)
+25 10
+26 >>> num *= 10
+27 >>> num
+28 100
+There’s also a special operator called modulus, % , that returns the remainder after integer
+division.
+1 >>> 10 % 3
+2 1
+One common use of modulus is determining if a number is divisible by another number. For
+example, we know that a number is even if it’s divided by 2 and the remainder is 0.
+1 >>> 10 % 2
+2 0
+3 >>> 12 % 2
+4 0
+Finally, make sure to use parentheses to enforce precedence.
+1 >>> (2 + 3) * 5
+2 25
+3 >>> 2 + 3 * 5
+4 17
+4
+Strings
+Strings are used quite often in Python. Strings, are just that, a string of characters - which
+s anything you can type on the keyboard in one keystroke, like a letter, a number, or a backslash.
+Python recognizes single and double quotes as the same thing, the beginning and end of the
+strings.
+1 >>> "string list"
+2 'string list'
+3 >>> 'string list'
+4 'string list'
+What if you have a quote in the middle of the string? Python needs help to recognize quotes
+as part of the English language and not as part of the Python language.
+1 >>> "I ’cant do that"
+2 'I ’cant do that'
+3 >>> "He said \"no\" to me"
+4 'He said "no" to me'
+Now you can also join (concatenate) strings with use of variables as well.
+1 >>> a = "first"
+2 >>> b = "last"
+3 >>> a + b
+4 'firstlast'
+If you want a space in between, you can change a to the word with a space after.
+1 >>> a = "first "
+2 >>> a + b
+3 'first last'
+There are different string methods for you to choose from as well - like upper(), lower(),
+replace(), and count().
+upper() does just what it sounds like - changes your string to all uppercase letters.
+1 >>> str = 'woah!'
+2 >>> str.upper()
+3 'WOAH!'
+Can you guess what lower() does?
+5
+1 >>> str = 'WOAH!'
+2 >>> str.lower()
+3 'woah!'
+replace() allows you to replace any character with another character.
+1 >>> str = 'rule'
+2 >>> str.replace('r', 'm')
+3 'mule'
+Finally, count() lets you know how many times a certain character appears in the string.
+1 >>> number_list =['one', 'two', 'one', 'two', 'two']
+2 >>> number_list.count('two')
+3 3
+You can also format/create strings with the format() method.
+1 >>> "{0} is a lot of {1}".format("Python", "fun!")
+2 'Python is a lot of fun!'
+6
+Booleans
+Boolean values are simply True or False .
+Check to see if a value is equal to another value with two equal signs.
+1 >>> 10 == 10
+2 True
+3 >>> 10 == 11
+4 False
+5 >>> "jack" == "jack"
+6 True
+7 >>> "jack" == "jake"
+8 False
+To check for inequality use !=.
+1 >>> 10 != 10
+2 False
+3 >>> 10 != 11
+4 True
+5 >>> "jack" != "jack"
+6 False
+7 >>> "jack" != "jake"
+8 True
+You can also test for > , < , >= , and <=.
+1 >>> 10 > 10
+2 False
+3 >>> 10 < 11
+4 True
+5 >>> 10 >= 10
+6 True
+7 >>> 10 <= 11
+8 True
+9 >>> 10 <= 10 < 0
+10 False
+11 >>> 10 <= 10 < 11
+12 True
+13 >>> "jack" > "jack"
+14 False
+7
+15 >>> "jack" >= "jack"
+16 True
+8
+Chapter 3
+Collections
+Lists
+Lists are containers for holding values.
+1 >>> fruits = ['apple','lemon','orange','grape']
+2 >>> fruits
+3 ['apple', 'lemon', 'orange', 'grape']
+To access the elements in the list you can use their associated index value. Just remember
+that the list starts with 0, not 1.
+1 >>> fruits[2]‘’
+2 orange
+If the list is long and you need to count from the end you can do that as well.
+1 >>> fruits[-2]‘’
+2 orange
+Now, sometimes lists can get long and you want to keep track of how many elements you have
+in your list. To find this, use the len() function.
+1 >>> len(fruits)
+2 4
+Use append() to add a new element to the end of the list and pop() to remove an element
+from the end.
+9
+1 >>> fruits.append('blueberry')
+2 >>> fruits
+3 ['apple', 'lemon', 'orange', 'grape', 'blueberry']
+4 >>> fruits.append('tomato')
+5 >>> fruits
+6 ['apple', 'lemon', 'orange', 'grape', 'blueberry', 'tomato']
+7 >>> fruits.pop()
+8 'tomato'
+9 >>> fruits
+10 ['apple', 'lemon', 'orange', 'grape', 'blueberry']
+Check to see if a value exists using in the list.
+1 >>> 'apple' in fruits
+2 True
+3 >>> 'tomato' in fruits
+4 False
+10
+Dictionaries
+A dictionary optimizes element lookups. It uses key/value pairs, instead of numbers as placeholders. Each key must have a value, and you can use a key to look up a value.
+1 >>> words = {'apple': 'red','lemon': 'yellow'}
+2 >>> words
+3 {'apple': 'red', 'lemon': 'yellow'}
+4 >>> words['apple']
+5 'red'
+6 >>> words['lemon']
+7 'yellow'
+This will also work with numbers.
+1 >>> dict = {'one': 1, 'two': 2}
+2 >>> dict
+3 {'one': 1, 'two': 2}
+Output all the keys with keys() and all the values with values().
+1 >>> words.keys()
+2 dict_keys(['apple', 'lemon'])
+3 >>> words.values()
+4 dict_values(['red', 'yellow'])
+11
+Chapter 4
+Control Statements
+IF Statements
+The IF statement is used to check if a condition is true.
+Essentially, if the condition is true, the Python interpreter runs a block of statements called
+the if-block. If the statement is false, the interpreter skips the if block and processes another
+block of statements called the else-block. The else clause is optional.
+Let’s look at two quick examples.
+1 >>> num = 20
+2 >>> if num == 20:
+3 ... print('the number is 20')
+4 ... else:
+5 ... print('the number is not 20')
+6 ...
+7 the number is 20
+8 >>> num = 21
+9 >>> if num == 20:
+10 ... print('the number is 20')
+11 ... else:
+12 ... print('the number is not 20')
+13 ...
+14 the number is not 20
+You can also add an elif clause to add another condition to check for.
+1 >>> num = 21
+12
+2 >>> if num == 20:
+3 ... print('the number is 20')
+4 ... elif num > 20:
+5 ... print('the number is greater than 20')
+6 ... else:
+7 ... print('the number is less than 20')
+8 ...
+9 the number is greater than 20
+13
+Loops
+There are 2 kinds of loops used in Python - the for loop and the while loop. for loops are
+traditionally used when you have a piece of code which you want to repeat n number of times.
+They are also commonly used to loop or iterate over lists.
+1 >>> colors = ['red', 'green', 'blue']
+2 >>> colors
+3 ['red', 'green', 'blue']
+4 >>> for color in colors:
+5 ... print('I love ' + color)
+6 ...
+7 I love red
+8 I love green
+9 I love blue
+while loops, like the for Loop, are used for repeating sections of code - but unlike a for
+loop, the while loop continues until a defined condition is met.
+1 >>> num = 1
+2 >>> num
+3 1
+4 >>> while num <= 5:
+5 ... print(num)
+6 ... num += 1
+7 ...
+8 1
+9 2
+10 3
+11 4
+12 5
+14
+Chapter 5
+Functions
+Functions are blocks of reusable code that perform a single task.
+You use def to define (or create) a new function then you call a function by adding parameters
+to the function name.
+1 >> def multiply(num1, num2):
+2 ... return num1 * num2
+3 ...
+4 >>> multiply(2, 2)
+5 4
+You can also set default values for parameters.
+1 >>> def multiply(num1, num2=10):
+2 ... return num1 * num2
+3 ...
+4 >>> multiply(2)
+5 20
+Ready to learn more? Visit Real Python to learn Python and web development. Cheers!
+15
