@@ -1,56 +1,40 @@
-# type data list
+# materi List
+print('materi list')
+daftar_buku = ['fisika', 'biologi', 'matamatika', 'kimia']
 
-daftar_buku = ['matematika', 'fisika', 'biologi', 'kimia']
-print('>>>tampilkan daftar buku')
+print('\n>>>tampilkan value list daftar_buku')
 print(daftar_buku)
 
-print('\n>>>proses semua dengan for in')
+# proses semua dengan for in
+print('\n>>>proses semua dengan for in. ini akan menampilkan value satu persatu')
 for buku in daftar_buku:
-    print(buku)
+    print(buku)  # ini akan menampilkan value list daftar_buku satu persatu
 
-print('\n>>>atau bisa juga dengan seperti ini')
-for i in daftar_buku:
-    print(i)
-print('hasilnya sama khan')
+# tampilkan isi daftar_buku pada index tertentu
+print('\n>>>tampilkan isi daftar_buku pada index tertentu')
+print(daftar_buku[0])
+print(daftar_buku[2])
 
-print('\n>>>tampilkan isi daftar buku pada index tertentu')
-print(daftar_buku[0])  # index pertama dimulai dari 0
-print(daftar_buku[-1])  # index terakhir (pertama dari belakang) adalah -1
-
+# tampilkan dengan for in range
 print('\n>>>tampilkan dengan for in range')
-daftar_buku = ['matematika', 'fisika', 'biologi', 'kimia']
-for i in range(0, len(daftar_buku)):
-    print(daftar_buku[i])
-print('\nbisa juga tampilkan hanya range tertentu')
-for i in range(0, 2):
-    print(daftar_buku[i])
-
-print('\n>>>tambahkan satu buku baru')
-daftar_buku.append('cadcam')
+daftar_buku = ['fisika', 'biologi', 'matamatika', 'kimia']
 for i in range(0, len(daftar_buku)):
     print(daftar_buku[i])
 
-print('\n>>>clear : menghapus semua isi list')
-daftar_buku = ['matematika', 'fisika', 'biologi', 'kimia']
-daftar_buku.clear()
-for i in range(0, len(daftar_buku)):
-    print(daftar_buku[i])
+# append = tambahkan 1 buku baru di index terakhir
+print('\nappend = tambahkan 1 buku baru di index terakhir')
 
-print('\n>>>mengganti elemen pertama')
-daftar_buku = ['matematika', 'fisika', 'biologi', 'kimia']
-daftar_buku[0] = 'ilmu logam'
-for i in range(0, len(daftar_buku)):
-    print(daftar_buku[i])
+# clear list (menghapus semua isi daftar buku)
+print('\nclear list (menghapus semua isi daftar buku')
 
-print('\n>>>ambil elemen ke n dan simpan ke variabel tertentu')
-daftar_buku = ['matematika', 'fisika', 'biologi', 'kimia']
-buku = daftar_buku.pop(0)
-for i in range(0, len(daftar_buku)):
-    print(daftar_buku[i])
-print(f' ini elemen yg diambil: {buku} ')
+# ganti index pertama
+print('\nganti index pertama')
 
+# pop = ambil index ke n dan simpan pada variabel tertentu
+print('\npop = ambil index ke n dan simpan pada variabel tertentu')
 
+# pop =  menghapus elemen terakhir
+print('\npop =  menghapus elemen terakhir')
 
-
-
-
+# pop = menghapus /  mengambil index tertentu
+print('\n pop = menghapus /  mengambil index tertentu')
