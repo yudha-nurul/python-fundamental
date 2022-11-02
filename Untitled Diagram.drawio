@@ -1,1 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2022-11-02T02:36:15.371Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="V270q5IDu_tDjYKgM5Eh" version="20.5.1" type="github"><diagram id="zvbnAYmRg48CVS72RV-R" name="Page-1">jZJNT8QgEIZ/DUeTtqSrV+2ua2LcSw8ab6SMhQRKQ6lt/fVSGfqRzSZeCDzvzDC8DKGFHs+WteLNcFAkS/hI6JFk2X2S+3UGUwD0QAOoreQBpSso5Q8gTJD2kkO3C3TGKCfbPaxM00DldoxZa4Z92JdR+1tbVsMVKCumrum75E4E+pAnK38BWYt4c5qgolkMRtAJxs2wQfREaGGNcWGnxwLU7F30JeQ931CXxiw07j8Jluq6ee1M1X7k6nK+8OPj5x1W+Waqxwdjs26KDljTNxzmIimhT4OQDsqWVbM6+C/3TDitUMZyYB2MN/tMl9f7qQGjwdnJh2BCtBYHJto3rO6nkYmN8wdkDD+8XgqvnvgN2hKPq/1/2maG6ekX</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-11-02T02:37:18.698Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="MXf7NqTmrdlbEGvVc5ib" version="20.5.1" type="github">
+  <diagram id="zvbnAYmRg48CVS72RV-R" name="Page-1">
+    <mxGraphModel dx="705" dy="363" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pAfI1hrCliLBL8G6hh9T-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="r3mgnKsocpX5lNGNdDAZ-1" target="pAfI1hrCliLBL8G6hh9T-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r3mgnKsocpX5lNGNdDAZ-1" value="START" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="pAfI1hrCliLBL8G6hh9T-1" value="Ibu berkata, belikan telor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
