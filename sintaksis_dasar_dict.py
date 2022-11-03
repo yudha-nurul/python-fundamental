@@ -16,7 +16,7 @@ print(user['name'])
 print(user['username'])
 
 # dictionary yang lebih kompleks
-print('\n>>> dictionary yang lebih kompleks')
+print('\n>>> dictionary yang lebih kompleks (dict didalam dict)')
 user = {
     'id': 1,
     'name': 'Leanne Graham',
