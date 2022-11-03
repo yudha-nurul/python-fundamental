@@ -38,4 +38,3 @@ print(user['id'])
 print(user['username'])
 print(user['address']['street'])
 print(user['address']['geo']['lat'])
-
