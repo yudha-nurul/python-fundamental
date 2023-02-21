@@ -35,6 +35,11 @@ user = {
 }
 print(user)
 print(user['id'])
+print(user['name'])
 print(user['username'])
+print(user['email'])
+print(user['address'])
 print(user['address']['street'])
+print(user['address']['geo'])
 print(user['address']['geo']['lat'])
+print(user['address']['geo']['lng'])
