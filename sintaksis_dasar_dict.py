@@ -43,3 +43,14 @@ print(user['address']['street'])
 print(user['address']['geo'])
 print(user['address']['geo']['lat'])
 print(user['address']['geo']['lng'])
+
+print('\n============Rubah dict ke json===============')
+import json
+result = json.dumps(user)
+print(result)
+print(type(result))
+
+print('\n============menulis hasilnya ke file===============')
+
+with open('result.json', 'w') as file:
+    json.dump(user, file)
