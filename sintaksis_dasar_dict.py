@@ -6,7 +6,7 @@ user = {
     'email': 'Sincere@april.biz',
 }
 print(user)
-print('\ntampilkan dengan for in')
+print('\ntampilkan hadiah saye dengan for in')
 for dic in user:
     print(dic)
 

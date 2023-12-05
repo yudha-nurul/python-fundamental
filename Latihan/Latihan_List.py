@@ -42,7 +42,7 @@ print('\n8. pop = ambil index ke n dan simpan pada variabel tertentu')
 daftar_buku = ['fisika', 'biologi', 'matamatika', 'kimia']
 print(daftar_buku)
 
-print(f'ini hasil dari elemen yang diambil: {buku}')
+print(f'ini hasil dari elemen yang diambil: {daftar_buku}')
 
 # pop =  menghapus elemen terakhir
 print('\n9. pop =  menghapus elemen terakhir')
